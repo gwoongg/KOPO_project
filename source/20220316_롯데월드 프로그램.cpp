@@ -77,7 +77,7 @@ int main()
 		    }
     }
     while(true){
-	    printf("몇 장을 주문하시겠습니까?\n");
+	    printf("몇 장을 주문하시겠습니까? (최대 10장)\n");
 	    scanf("%d", &num);
 	        if((num <= MAX_NUM) && (num >= MIN_NUM)){
 			    break;
@@ -124,10 +124,9 @@ int main()
 		}
 		else{
 			priceResult = ADULT_DAY_PRICE;
-		} 
-		
+		} 	
 	}
-	else if(ticketSelect == 2){
+	if(ticketSelect == 2){
 		if(age < 1){
 			priceResult = FREE_NIGHT_PRICE;
 		} 
